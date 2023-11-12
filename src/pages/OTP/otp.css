@@ -1,0 +1,88 @@
+.otp-container {
+	background: url("../../assets/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+}
+
+.section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 40vw;
+	min-width: 350px;
+	height: 80vh;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	padding: 24px 0px;
+	background-color: var(--white);
+}
+.section svg {
+	margin: 16px 0;
+}
+.section h2 {
+	color: black;
+}
+.section p {
+	color: #a3a3a3;
+	/* font-size: 14px; */
+	/* width: 200px; */
+	margin-top: 4px;
+}
+.section form {
+	width: 20rem;
+}
+.section form #inputs {
+	width: 100%;
+	display: grid;
+	gap: 1rem;
+	grid-auto-flow: column;
+	place-items: center;
+	justify-content: center;
+}
+#inputs input {
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	border: none;
+	border-radius: 0.3rem;
+	background: #fff;
+	color: #121212;
+	font-size: 1.2rem;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+		rgba(0, 0, 0, 0.05) 0px 5px 10px;
+	/* border-bottom: 1.5px solid #d2d2d2; */
+}
+
+#inputs input:focus {
+	/* border-bottom: 1.5px solid deepskyblue; */
+	outline: none;
+	box-shadow: 0 0 10px deepskyblue;
+}
+.section form input[type="submit"] {
+	width: 100%;
+	padding: 0.8rem 0;
+	outline: none;
+	border: 0;
+	margin-top: 1rem;
+	border-radius: 0.4rem;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	background-color: var(--blue);
+	background-image: linear-gradient(
+		90deg,
+		var(--blue) 0%,
+		var(--lightblue) 74%
+	);
+}

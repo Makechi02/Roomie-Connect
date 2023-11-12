@@ -1,0 +1,68 @@
+.quizes {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+.quizes .form-one {
+	/* width: 80%; */
+	/* height: 60vh; */
+	width: 30rem;
+	height: 30rem;
+	border: 1px solid #333;
+}
+.quizes form {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	padding: 1rem;
+}
+form h2 {
+	font-size: 2rem;
+	text-transform: capitalize;
+}
+form span {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	/* margin: 1rem 0; */
+}
+form span label {
+	font-size: 1.2rem;
+	text-transform: capitalize;
+}
+form span input {
+	padding: 0.5rem;
+	outline: 0;
+	border: 1px solid var(--black);
+}
+form span textarea {
+	height: 10rem;
+	resize: none;
+	outline: 0;
+	border: 1px solid var(--black);
+	padding: 0.5rem;
+}
+form div {
+	width: 100%;
+	display: grid;
+	place-items: end;
+}
+form input[type="submit"] {
+	background: transparent;
+	outline: none;
+	border: 0;
+	background: var(--blue);
+	padding: 0.4rem;
+	font-size: 1.2rem;
+	color: var(--white);
+	text-transform: capitalize;
+	cursor: pointer;
+	width: 10rem;
+}
+
+@media screen and (max-width: 500px) {
+	.quizes .form-one {
+		width: 90%;
+	}
+}

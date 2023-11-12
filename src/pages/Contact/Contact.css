@@ -1,0 +1,153 @@
+.contactPage {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	padding: 3rem 1rem 2rem 1rem;
+}
+.contactPage h3 {
+	font-size: 2rem;
+	color: var(--black);
+}
+.emailContainer {
+	width: 70%;
+	height: 70vh;
+	border-radius: 20px;
+	/* box-shadow: inset 0 0 10px #fff; */
+	box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+.emailContainer section {
+	width: 1000%;
+	height: 100%;
+}
+.emailForm form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.emailForm form input {
+	width: 80%;
+	margin: 10px 0;
+	border-radius: 5px;
+	padding: 10px 15px;
+	outline: none;
+	border: 0;
+	box-shadow: 0 0 2px var(--black);
+	background: transparent;
+	color: var(--black);
+}
+.emailForm form input::placeholder {
+	color: var(--black);
+}
+.emailForm form textarea {
+	width: 80%;
+	height: 40%;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 10px 15px;
+	box-shadow: 0 0 2px var(--black);
+	color: var(--black);
+	background: transparent;
+	resize: none;
+}
+.emailForm form textarea::placeholder {
+	color: var(--black);
+}
+.emailForm form button {
+	width: 100px;
+	height: 5vh;
+	outline: none;
+	border: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: -60%;
+	margin-top: 10px;
+	box-shadow: 0 0 10px #555;
+	cursor: pointer;
+	border-radius: 0.3rem;
+	transition: all 0.9s ease;
+}
+.emailForm form button:hover {
+	background: var(--Ucolor);
+}
+button {
+	font-family: "Sofia" !important;
+}
+
+/* ================================Responsiveness========================= */
+
+@media screen and (max-width: 510px) {
+	.emailContainer {
+		width: 100%;
+		height: 75vh;
+	}
+	section:nth-child(2) {
+		width: 95%;
+	}
+	.emailForm form {
+		padding-inline: 0.5rem;
+	}
+	.emailForm form input,
+	.emailForm form textarea {
+		width: 100%;
+	}
+	.emailForm form button {
+		width: 100px;
+		height: 40px;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.emailForm form h4 {
+		margin-left: -20%;
+	}
+	.emailForm form button {
+		margin-left: -64%;
+		width: auto;
+		height: auto;
+		padding: 0.5rem 1rem;
+	}
+
+	.contactPage {
+		height: auto !important;
+		margin: 15% 0;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.contactPage {
+		margin: 10% 0;
+		height: 600px !important;
+		margin: 0%;
+		padding: 0%;
+	}
+	.emailContainer {
+		height: 90vh;
+		margin: 0%;
+		padding: 0% 10px;
+	}
+	form h4 {
+		transform: translateX(5%);
+		font-size: 15px;
+	}
+	.emailForm form button {
+		font-size: 15px;
+		width: 90px;
+		height: 30px;
+		transform: translateX(30%);
+	}
+}
